@@ -9,6 +9,6 @@ void loop() {
 digitalWrite(16, 0);
 delay(100);
 digitalWrite(16, 1);
-delay(100);
+delay(10);
 
 }
