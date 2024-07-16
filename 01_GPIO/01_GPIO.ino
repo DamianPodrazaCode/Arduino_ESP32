@@ -1,9 +1,14 @@
 void setup() {
-  // put your setup code here, to run once:
+
+  pinMode(16, OUTPUT);
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
+digitalWrite(16, 0);
+delay(100);
+digitalWrite(16, 1);
+delay(100);
 
 }
