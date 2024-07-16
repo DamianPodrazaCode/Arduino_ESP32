@@ -40,6 +40,17 @@ PIN - OPIS (bez opisu zwykły IO)
 
 void setup() {
 
+/*
+  void pinMode(uint8_t pin, uint8_t mode);
+    pin  -> wskazuje na numer pinu
+    mode -> ustawia tryb pracy
+
+    tryby pracy:
+    - INPUT  - jako wejście bez pullup lub pulldown (high impedance).
+    - OUTPUT - jako wyjście LOW - HIGH.
+    - INPUT_PULLDOWN - jako wejście z podciągnięciem wewnętrznie do masy.
+    - INPUT_PULLUP - jako wejście z podciągnięciem wewnętrznie do do zasilania.
+*/
   pinMode(16, OUTPUT);
 
 }
