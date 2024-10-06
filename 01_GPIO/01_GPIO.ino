@@ -48,18 +48,34 @@ void setup() {
     tryby pracy:
     - INPUT  - jako wejście bez pullup lub pulldown (high impedance).
     - OUTPUT - jako wyjście LOW - HIGH.
-    - INPUT_PULLDOWN - jako wejście z podciągnięciem wewnętrznie do masy.
-    - INPUT_PULLUP - jako wejście z podciągnięciem wewnętrznie do do zasilania.
+    - INPUT_PULLDOWN - jako wejście z podciągnięciem wewnętrznie do masy (45KOhm).
+    - INPUT_PULLUP - jako wejście z podciągnięciem wewnętrznie do do zasilania (45KOhm).
 */
   pinMode(16, OUTPUT);
-
+  pinMode(17, OUTPUT);
+  pinMode(18, INPUT_PULLUP);
 }
+
+/*
+  void digitalWrite(uint8_t pin, uint8_t val);
+    pin  -> wskazuje na numer pinu
+    val  -> ustawienie pinu LOW lub HIGH (albo poprostu 0 lub 1)
+*/
+
+/*
+  int digitalRead(uint8_t pin);
+    pin  -> pin który odczytujemy
+*/
 
 void loop() {
 
 digitalWrite(16, 0);
-delay(1000);
+delay(1);
+//delayMicroseconds(20);
 digitalWrite(16, 1);
-delay(10);
+delay(1);
+//delayMicroseconds(20);
+
+// digitalWrite(17, digitalRead(18));
 
 }
